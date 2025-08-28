@@ -34,13 +34,11 @@
   <div class="container">
     <h2>🌡 Temperature Converter</h2>
     <input type="number" id="tempInput" placeholder="Enter temperature">
-   
     <select id="unit">
       <option value="celsius">Celsius (°C)</option>
       <option value="fahrenheit">Fahrenheit (°F)</option>
       <option value="kelvin">Kelvin (K)</option>
     </select>
-   
     <button onclick="convertTemp()">Convert</button>
     <div class="result" id="result"></div>
   </div>
