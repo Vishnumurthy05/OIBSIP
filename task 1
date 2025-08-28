@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oasis Internship Landing Page</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { line-height: 1.6; color: #333; background: #fafafa; }
+
+    /* Header */
+    header {
+      background: #2C3E50; color: white; padding: 1rem 2rem;
+      display: flex; justify-content: space-between; align-items: center;
+      position: sticky; top: 0; z-index: 1000;
+    }
+    header h2 { letter-spacing: 1px; }
+    nav a {
+      color: white; margin: 0 12px; text-decoration: none; font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #1ABC9C; }
+
+    /* Hero Section */
+    .hero {
+      height: 90vh; display: flex; flex-direction: column; justify-content: center;
+      align-items: center; text-align: center; background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+      url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80') no-repeat center/cover;
+      color: white; padding: 2rem;
+    }
+    .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
+    .btn {
+      background: #1ABC9C; color: white; padding: 12px 25px; border: none; cursor: pointer; border-radius: 25px;
+      transition: background 0.3s;
+    }
+    .btn:hover { background: #16a085; }
+
+    /* About Section */
+    .about {
+      padding: 3rem 2rem; text-align: center;
+    }
+    .about h2 { color: #2C3E50; margin-bottom: 1rem; }
+    .about p { max-width: 800px; margin: auto; font-size: 1.1rem; color: #555; }
+
+    /* Services Section */
+    .services {
+      padding: 3rem 2rem; background: #fff;
+    }
+    .services h2 { text-align: center; margin-bottom: 2rem; color: #2C3E50; }
+    .service-container {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #f9f9f9; padding: 2rem; border-radius: 10px;
+      text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card h3 { color: #1ABC9C; margin-bottom: 1rem; }
+
+    /* Contact Section */
+    .contact {
+      padding: 3rem 2rem; text-align: center; background: #f4f4f4;
+    }
+    .contact h2 { margin-bottom: 1rem; color: #2C3E50; }
+    form { max-width: 500px; margin: auto; display: flex; flex-direction: column; }
+    form input, form textarea {
+      margin: 10px 0; padding: 12px; border: 1px solid #ccc; border-radius: 5px;
+    }
+    form button {
+      background: #1ABC9C; color: white; padding: 12px; border: none;
+      border-radius: 5px; cursor: pointer; transition: 0.3s;
+    }
+    form button:hover { background: #16a085; }
+
+    /* Footer */
+    footer {
+      background: #2C3E50; color: white; text-align: center; padding: 1rem; margin-top: 20px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .hero p { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h2>OASIS INTERNSHIP</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Oasis Internship</h1>
+    <p>Level up your skills with real-world projects and guidance.</p>
+    <button class="btn">Get Started</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Oasis Infobyte provides internships that help students and freshers
+       gain practical experience. With projects like landing pages, portfolio sites,
+       calculators, and more, interns develop industry-level skills while
+       building a strong foundation in web development.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-container">
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>Learn HTML, CSS, and JavaScript by building projects that matter.</p>
+      </div>
+      <div class="card">
+        <h3>Real Projects</h3>
+        <p>Work on real-world problems to improve your coding & problem-solving skills.</p>
+      </div>
+      <div class="card">
+        <h3>Mentorship</h3>
+        <p>Get guidance from experienced mentors to accelerate your learning.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Oasis Infobyte Internship | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
